@@ -66,7 +66,7 @@ header .logo
 }
 .showcase.active
 {
-  right: 300px;
+  right: 220px;
 }
 
 .showcase video
@@ -86,7 +86,7 @@ header .logo
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ffdd6f;
+  background: #f2eea2;
   mix-blend-mode: overlay;
 }
 .text
@@ -167,7 +167,7 @@ header .logo
   position: absolute;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 200px;
   height: 100%;
   display: flex;
   justify-content: center;
