@@ -209,25 +209,29 @@ header .logo
   }
 }
 
-.typewriter h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .05em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.typing {
+  position: relative;
+
+}
+.typing::after {
+  content: ".";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  color: white;
+  background: #111;
+  animation: typing 4s steps(16) forwards, caret 1s infinite;
 }
 
-/* The typing effect */
+
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  to {
+    width: 0;
+  }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+@keyframes caret {
+  50% {
+    color: transparent;
+  }
 }
