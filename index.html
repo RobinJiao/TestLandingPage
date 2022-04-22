@@ -18,7 +18,7 @@
     <div class="overlay"></div>
     <div class="text">
       <h3>攜手打造一個</h3> 
-      <h2 class="typing">富 饒 的 星 球</h2>
+      <h2 class="typing"></h2>
       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -40,6 +40,17 @@
       <li><a href="https://www.alltech.com/zh-tw/lianluowomen" target="_blank">聯絡我們</a></li>
     </ul>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    // import Typed from 'typed.js';
+    var options = {
+      strings: ['富 饒 的 星 球'],
+      typeSpeed: 80,
+      backSpeed: 40,
+      loop: true
+    };
+    var typed = new Typed('.typing', options);
+  </script>
   <script>
        const menuToggle = document.querySelector('.toggle');
       const showcase = document.querySelector('.showcase');

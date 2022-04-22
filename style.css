@@ -208,30 +208,3 @@ header .logo
     font-size: 2em;
   }
 }
-
-.typing {
-  position: relative;
-
-}
-.typing::after {
-  content: ".";
-  position: absolute;
-  right: 0;
-  width: 100%;
-  color: white;
-  background: #959595;
-  animation: typing 4s steps(16) forwards, caret 1s infinite;
-}
-
-
-@keyframes typing {
-  to {
-    width: 0;
-  }
-}
-
-@keyframes caret {
-  50% {
-    color: transparent;
-  }
-}
